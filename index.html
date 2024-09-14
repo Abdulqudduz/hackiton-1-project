@@ -10,8 +10,11 @@
 
 <body>
     <header>
-        <h1>Muhammed Abdulquddus</h1>
-        <p>Software Developer | Flutter, Python, Firebase</p>
+        <img src="assets/images/profile_image.jpg" alt="Header Image">
+        <div class="header-text">
+            <h1>Muhammed Abdulquddus</h1>
+            <p>Software & Web Developer | Flutter, Python, Firebase</p>
+        </div>
     </header>
 
     <section id="about">
@@ -25,43 +28,52 @@
         <ul>
             <li>Python</li>
             <li>Dart</li>
-            <li>JavaScript</li>
             <li>HTML & CSS</li>
         </ul>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <p>BSc in Computer Science</p>
-        <a href="resume.pdf" download>Download CV</a>
+        <a href="downloads/Abdulquddus_cv.pdf" download="Abdulquddus_cv.pdf" class="download-button">
+            Download CV
+        </a>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>BMI Calculator</h3>
+            <h3>MyBmi</h3>
             <p>A Flutter app that calculates body mass index based on height and weight.</p>
-            <a href="https://github.com/Abdulqudduz/bmi_calculator" target="_blank">View Project</a>
+            <a href="https://github.com/Abdulqudduz/MyBmi" target="_blank">View Project</a>
         </div>
         <div class="project">
             <h3>Responsive UI</h3>
             <p>A responsive UI design implemented in Flutter for both mobile and web.</p>
-            <a href="https://github.com/Abdulqudduz/responsive_ui" target="_blank">View Project</a>
+            <a href="https://github.com/Abdulqudduz/ResponsiveUi" target="_blank">View Project</a>
         </div>
     </section>
 
     <section id="interests">
         <h2>Interests</h2>
-        <p>I am passionate about mobile app development, blockchain, and DeFi. I love solving puzzles and creating
-            efficient code solutions.</p>
+        <p>I am passionate about mobile app development, blockchain, and DeFi and an aspiring web developer. I love
+            solving puzzles and creating efficient code solutions.</p>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/your-email" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
+        <form action="https://formspree.io/f/xnnayzrk" method="POST" name="portfolio-form">
+            <label>
+                Your Name:
+                <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+                Your Email:
+                <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+            <label>
+                Your Message:
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </label>
             <button type="submit">Send</button>
         </form>
     </section>
