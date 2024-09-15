@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #817276;
     color: #231f20;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 header {
@@ -35,8 +36,8 @@ header img {
     margin: 0 20px; 
     word-wrap: break-word;   
 }
- 
- @media (max-width: 760px) {
+
+@media (max-width: 760px) {
     .header-text {
         font-size: 11px;
         margin: 0 10px; 
@@ -150,3 +151,21 @@ footer {
     background-color: #383133;
     color: #231f20;
 }
+
+/* Style the scroll-to-top button */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #231f20;
+    color: white;
+    padding: 10px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    display: block; /* Always visible */
+    text-decoration: none;
+}
+
+

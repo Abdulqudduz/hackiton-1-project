@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <a id="top"></a>
+
     <header>
         <img src="assets/images/profile_image.jpg" alt="Header Image">
         <div class="header-text">
@@ -18,9 +20,8 @@
     </header>
 
     <section id="about">
-          <h3>About Me</h3>
-        <p>Hello! I'm a passionate software developer with experience in mobile and web development. I enjoy creating
-            clean, functional, and aesthetically pleasing solutions.</p>
+        <h3>About Me</h3>
+        <p>Hello! I'm a passionate software developer with experience in mobile and web development. I enjoy creating clean, functional, and aesthetically pleasing solutions.</p>
     </section>
 
     <section id="skills">
@@ -55,8 +56,7 @@
 
     <section id="interests">
         <h2>Interests</h2>
-        <p>I am passionate about mobile app development, blockchain, and DeFi and an aspiring web developer. I love
-            solving puzzles and creating efficient code solutions.</p>
+        <p>I am passionate about mobile app development, blockchain, and DeFi and an aspiring web developer. I love solving puzzles and creating efficient code solutions.</p>
     </section>
 
     <section id="contact">
@@ -81,6 +81,29 @@
     <footer>
         <p>© 2024 Muhammed Abdulquddus</p>
     </footer>
+
+    <a href="#top" id="scroll-to-top">↑</a>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var scrollToTopButton = document.getElementById('scroll-to-top');
+
+        scrollToTopButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            setTimeout(function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }, 500);
+        });
+    });
+    </script>
+
 </body>
 
 </html>
